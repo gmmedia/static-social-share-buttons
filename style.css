@@ -1,0 +1,47 @@
+/* BEGIN SOCIAL SIDEBAR CSS */
+.social-float {
+position: fixed;
+z-index: 2000;
+top: 248px;
+margin-left: -65px !important;
+line-height: 1em;
+}
+.teile {
+position: fixed;
+z-index: 2000;
+top: 311px;
+margin-left: -169px !important;
+line-height: 1em;
+}
+.social-float a {color:#fff !important;}
+.social-float a:hover {text-decoration:none !important;}
+.pos-left.show .sidebar-content:hover {width:64px;}
+.icon .sidebar-content {width:32px;height:32px;margin-bottom:6px;}
+.pos-left.icon .share-button, .pos-right.icon .share-button {width:64px;height:32px}
+.icon .sidebar-content, .icon-text .sidebar-content {background-position:center center;background-repeat:no-repeat}
+.ico-facebook {background-color:#3d5999;background-image:url("/wp-content/themes/j0e.org/icons/facebook.png")}
+.ico-twitter {background-color:#00aced;background-image:url("/wp-content/themes/j0e.org/icons/twitter.png")}
+.ico-pinterest {background-color:#d73532;background-image:url("/wp-content/themes/j0e.org/icons/pinterest.png")}
+.ico-google-plus {background-color:#bd301c;background-image:url("/wp-content/themes/j0e.org/icons/google-plus.png")}
+.pos-left.radius .sidebar-content {
+border-radius:3px;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+-o-border-radius:3px;
+-khtml-border-radius:3px}
+.pos-left.shadow .sidebar-content {
+box-shadow: inset 0 -4px 0 rgba(0,0,0,0.15);
+-moz-box-shadow:inset 0 -4px 0 rgba(0,0,0,0.2);
+-webkit-box-shadow: inset 0 -4px 0 rgba(0,0,0,0.2);
+}
+.pos-left.radius .sidebar-content {
+border-radius:3px;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+-o-border-radius:3px;
+-khtml-border-radius:3px}
+.pos-left.shadow .sidebar-content {
+box-shadow: inset 0 -4px 0 rgba(0,0,0,0.15);
+-moz-box-shadow:inset 0 -4px 0 rgba(0,0,0,0.2);
+-webkit-box-shadow: inset 0 -4px 0 rgba(0,0,0,0.2);
+}
