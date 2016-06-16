@@ -1,0 +1,14 @@
+<script>
+	function PopupCenter(pageURL, title,w,h) {
+	var left = (screen.width/2)-(w/2);
+	var top = (screen.height/2)-(h/2);
+	var targetWin = window.open (pageURL, title, 'toolbar=no, status=no, menubar=no, width='+w+', height='+h+', top='+top+', left='+left);
+	} 
+</script>
+<strong class="teile" title="Teile diesen Beitrag">Teile mich</strong>
+<div class="social-float pos-left icon show shadow radius">
+	<a href="javascript:void(0);" title="Bei Facebook empfehlen" onclick="PopupCenter('https://www.facebook.com/sharer/sharer.php?u='.urlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']).'&t='.rawurlencode(strip_tags(get_the_title())).'','Facebook',550,370);" rel="nofollow"><div class="sidebar-content ico-facebook"></div></a>
+	<a href="javascript:void(0);" title="Bei Twitter empfehlen" onclick="PopupCenter('https://twitter.com/share?url='.urlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']).'&text='.rawurlencode(strip_tags(get_the_title())).'&via=slotnerd&hashtags=slotcar','Twitter',550,330);" rel="nofollow"><div class="sidebar-content ico-twitter"></div></a>
+	<a href="javascript:void(0);" title="Bei Google+ empfehlen" onclick="PopupCenter('https://plus.google.com/share?url='.urlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']).'','Google+',550,630);" rel="nofollow"><div class="sidebar-content ico-google-plus"></div></a>
+	<a href="javascript:void(0);" title="Bei Pinterest empfehlen" onclick="PopupCenter('http://pinterest.com/pin/create/button/?url='.urlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']).'&media='.urlencode(wp_get_attachment_url(get_post_thumbnail_id($post->ID))).'&description='.rawurlencode(strip_tags(get_the_title())).'','Google+',550,630);" rel="nofollow"><div class="sidebar-content ico-pinterest"></div></a>
+</div>
